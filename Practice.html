@@ -1,30 +1,87 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
+
+  <p>Declare the Doctype of an HTML Document<br>
+The challenges so far have covered specific HTML elements and their uses. However, there are a few elements that give overall structure to your page, and should be included in every HTML document.<br>
+<br>
+At the top of your document, you need to tell the browser which version of HTML your page is using. HTML is an evolving language, and is updated regularly. Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous versions of the language.<br>
+<br>
+You tell the browser this information by adding the &lt;!DOCTYPE ...> tag on the first line, where the ... part is the version of HTML. For HTML5, you use &lt;!DOCTYPE html>.<br>
+<br>
+The ! and uppercase DOCTYPE is important, especially for older browsers. The html is not case sensitive.<br>
+<br>
+Next, the rest of your HTML code needs to be wrapped in html tags. The opening &lt;html> goes directly below <br>
+&lt;!DOCTYPE html> line, and the closing &lt;/html> goes at the end of the page.<br>
+<br>
+Here's an example of the page structure. Your HTML code would go in the space between the two html tags.<br>
+<br>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+<br>
+&lt;/html></p>
 <!--
 	comment out HTML
 	keep or stop running
 	on and on and on
 -->
+
+<p>Define the Head and Body of an HTML Document<br>
+You can add another level of organization in your HTML document within the html tags with the head and body elements. Any markup with information about your page would go into the head tag. Then any markup with the content of the page (what displays for a user) would go into the body tag.<br>
+<br>
+Metadata elements, such as link, meta, title, and style, typically go inside the head element.<br>
+<br>
+Here's an example of a page's layout:<br>
+<br>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+  &lt;head><br>
+    &lt;meta /><br>
+  &lt;/head><br>
+  &lt;body><br>
+    &lt;div><br>
+    &lt;/div><br>
+  &lt;/body><br>
+&lt;/html></p><br>
+<br>
+<p>Example:<br>
+<br>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+  &lt;head><br>
+  &lt;title>The best page ever&lt;/title><br>
+&lt;/head><br>
+&lt;body><br>
+  &lt;h1>The best page ever&lt;/h1><br>
+  &lt;p>Cat ipsum dolor sit amet, jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed. Go into a room to decide you didn't want to be in there anyway. I like big cats and i can not lie kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Meow i could pee on this if i had the energy for slap owner's face at 5am until human fills food dish yet scamper. Knock dish off table head butt cant eat out of my own dish scratch the furniture. Make meme, make cute face. Sleep in the bathroom sink chase laser but pee in the shoe. Paw at your fat belly licks your face and eat grass, throw it back up kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.&lt;/p><br>
+&lt;/body><br>
+&lt;/html></p>
+<br>
 <h1>Practice: Most HTML elements have an opening tag and a closing tag.
 	h1 elements are often used for main headings,</h1>
+  <p>&lt;h1>Practice: Most HTML elements have an opening tag and a closing tag.<br>
+  h1 elements are often used for main headings,&lt;/h1></p>
 
 <h2>This element tells the browser about the structure of your website.
 	h2 elements are generally used for subheadings. 
 	There are also h3, h4, h5 and h6 elements to indicate different levels of subheadings.</h2>
 
+  <p>&lt;h2>This element tells the browser about the structure of your website.
+  h2 elements are generally used for subheadings. 
+  There are also h3, h4, h5 and h6 elements to indicate different levels of subheadings.&lt;/h2></p>
+
 	
-<p> elements are the preferred element for paragraph text on websites. p is short for "paragraph".
+<p> elements are the preferred element for paragraph text on websites. p is short for "paragraph".<br>
+<br>
+You can create a paragraph element like this:</p><br>
+<br>
+<p>&lt;p>I'm a p tag! p tags are for paragraphs.&lt;/p></p>
 
-You can create a paragraph element like this:</p>
-
-<p>I'm a p tag! p tags are for paragraphs.</p>
-
-<p>HTML5 introduces more descriptive HTML tags. These include main, header, footer, nav, video, article, section and others.
-
-These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The main HTML5 tag helps search engines and other developers find the main content of your page.
-
-Example usage, a main element with two child elements nested inside it:</p>
-
+<p>HTML5 introduces more descriptive HTML tags. These include main, header, footer, nav, video, article, section and others.<br>
+<br>
+These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The main HTML5 tag helps search engines and other developers find the main content of your page.<br>
+<br>
+Example usage, a main element with two child elements nested inside it:</p><br>
+<br>
 <main> 
   <h1>Hello World</h1>
   <p>Hello Paragraph</p>
@@ -197,7 +254,133 @@ For example, if you wanted to make a text input field required, you can just add
 <form action="https://freecatphotoapp.com/submit-cat-photo">
     <input type="text" required placeholder="cat photo URL">
     <button type="submit">Submit</button>
+    <label for="indoor"> 
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+</label>
+<label for="indoor"> 
+  <input id="indoor" type="radio" name="indoor-outdoor">Outdoor 
+</label>
+<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
   </form>
+
+  <p>Create a Set of Radio Buttons <br>
+You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.<br>
+
+Radio buttons are a type of input.<br>
+
+Each of your radio buttons can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the radio button input with the label element surrounding it.<br>
+
+All related radio buttons should have the same name attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.</p>
+
+<p>Here's an example of a radio button:</p>
+<p>&lt;label> <br>
+  &lt;input type="radio" name="indoor-outdoor">Indoor <br>
+&lt;/label></p>
+
+<p>It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. This allows assistive technologies to create a linked relationship between the label and the child input element. For example:</p>
+
+<p>&lt;label for="indoor"> <br>
+  &lt;input id="indoor" type="radio" name="indoor-outdoor">Indoor <br>
+&lt;/label></p>
+
+<p>&lt;label for="indoor"><br>
+  &lt;input id="indoor" type="radio" name="indoor-outdoor">Outdoor <br>
+  &lt;/label></p>
+
+<p>See sample above with indoor outdoor.Both labels need to be in the form element.</p>
+
+<p>Use the &lt;br> at the end of a line to<br>start a new line in a paragraph print statement.</p>
+
+<p>Create a Set of Checkboxes<br>
+  <br>
+Forms commonly use checkboxes for questions that may have more than one answer.<br>
+
+Checkboxes are a type of input.<br>
+
+Each of your checkboxes can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the checkbox input with the label element surrounding it.<br>
+<br>
+All related checkbox inputs should have the same name attribute.<br>
+<br>
+It is considered best practice to explicitly define the relationship between a checkbox input and its corresponding label by setting the for attribute on the label element to match the id attribute of the associated input element.<br>
+<br>
+Here's an example of a checkbox:</p>
+
+<p>&lt;label for="loving">&lt;input id="loving" type="checkbox" name="personality"> Loving&lt;/label></p>
+
+<form><label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+<label for="curious"><input id="curious" type="checkbox" name="personality"> Curious</label>
+<label for="active"><input id="active" type="checkbox" name="personality"> Active</label>
+</form>
+
+<p>Use the value attribute with Radio Buttons and Checkboxes<br>
+  <br>
+When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type radio and checkbox report their values from the value attribute.<br>
+<br>
+For example:<br>
+<br>
+&lt;label for="indoor"><br>
+  &lt;input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor<br>
+&lt;/label><br>
+&lt;label for="outdoor"><br>
+  &lt;input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor<br>
+&lt;/label></p>
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label>
+    <label for="lazy"><input id="lazy" value="lazy" type="checkbox" name="personality"> Lazy</label>
+    <label for="energetic"><input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>You can set a checkbox or radio button to be checked by default using the checked attribute.<br>
+<br>
+To do this, just add the word checked to the inside of an input element. For example:<br>
+<br>
+&lt;input type="radio" name="test-name" checked><br>
+<br>
+&lt;label for="indoor">&lt;input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor&lt;/label><br>
+<br>
+&lt;label for="loving">&lt;input id="loving" type="checkbox" name="personality" value="loving" checked> Loving&lt;/label></p>
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+
+<p>Nest Many Elements within a Single div Element<br>
+  <br>
+The div element, also known as a division element, is a general purpose container for other elements.<br>
+<br>
+The div element is probably the most commonly used HTML element of all.<br>
+<br>
+Just like any other non-self-closing element, you can open a div element with &lt;div> and close it on another line with &lt;/div>.<br>
+<br>
+Example:</p>
+
+<div>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+
 
 	<script src="FILENAME.JS"></script> <!-- Check to see if file needs to be in same folder -->
 </head>
