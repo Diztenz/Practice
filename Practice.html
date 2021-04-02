@@ -1,0 +1,185 @@
+<<!DOCTYPE html>
+<head>
+<!--
+	comment out HTML
+	keep or stop running
+	on and on and on
+-->
+<h1>Practice: Most HTML elements have an opening tag and a closing tag.
+	h1 elements are often used for main headings,</h1>
+
+<h2>This element tells the browser about the structure of your website.
+	h2 elements are generally used for subheadings. 
+	There are also h3, h4, h5 and h6 elements to indicate different levels of subheadings.</h2>
+
+	
+<p> elements are the preferred element for paragraph text on websites. p is short for "paragraph".
+
+You can create a paragraph element like this:</p>
+
+<p>I'm a p tag! p tags are for paragraphs.</p>
+
+<p>HTML5 introduces more descriptive HTML tags. These include main, header, footer, nav, video, article, section and others.
+
+These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The main HTML5 tag helps search engines and other developers find the main content of your page.
+
+Example usage, a main element with two child elements nested inside it:</p>
+
+<main> 
+  <h1>Hello World</h1>
+  <p>Hello Paragraph</p>
+</main>
+
+<p>You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.</p>
+
+<p>An example of this would be:</p>
+
+<p>&lt;img src="https://www.freecatphotoapp.com/your-image.jpg"></p> <!-- see line 49 -->
+<p>use &+lt+; all together to actually print the left angle bracket on your page.  You can then just use the regular right angle bracket to print.  See above. </p>
+
+<p>Note that img elements are self-closing.
+
+All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image "fails to load.
+
+Note: If the image is purely decorative, using an empty alt attribute is a best practice.
+
+Ideally the alt attribute should not contain special characters unless needed.
+
+Let's add an alt attribute to our img example above:</p>
+
+<p><img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie."></p>
+
+<img src="https://bit.ly/fcc-relaxing-cat" alt="A cat relaxing">
+
+  <p>Link to External Pages with Anchor Elements
+You can use "a" a (anchor) elements to link to content outside of your web page.
+
+"a" elements need a destination web address called an href attribute. They also need anchor text. Here's an example:</p>
+
+<p>&lt;a href="https://freecodecamp.org">this links to freecodecamp.org&lt;/a></p>
+
+<p>Then your browser will display the text "this links to freecodecamp.org" as a link you can click. And that link will take you to the web address https://www.freecodecamp.org.</p>
+
+<a href="https://freecodecamp.org">this links to freecodecamp.org</a>
+
+<p>another example</p>
+
+<p>&lt;a href="https://freecatphotoapp.com">"cat photos"&lt;/a></p>
+
+<a href="https://freecatphotoapp.com">"cat photos"</a>  
+
+<p>Link to Internal Sections of a Page with Anchor Elements</p>
+
+<p>a (anchor) elements can also be used to create internal links to jump to different sections within a webpage.
+
+To create an internal link, you assign a link's href attribute to a hash symbol # plus the value of the id attribute for the element that you want to internally link to, usually further down the page. You then need to add the same id attribute to the element you are linking to. An id is an attribute that uniquely describes an element.
+
+Below is an example of an internal anchor link and its target element:</p>
+
+<p>&lt;a href="#contacts-header">Contacts&lt;/a></p>
+...
+<p>&lt;h2 id="contacts-header">Contacts&lt;/h2></p>
+
+
+<a href="#contacts-header">Contacts</a> 
+
+<p>This goes to contacts below.</p>
+
+<p>Nest an Anchor Element within a Paragraph
+You can nest links within other text elements.</p>
+
+<p>
+  Here's a &lt;a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org&lt;/a> for you to follow.
+</p>
+
+<p>
+  Here's a <a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org</a> for you to follow.
+</p>
+
+<p>Let's break down the example. Normal text is wrapped in the p element:</p>
+
+<p> Here's a ... for you to follow. </p>
+<p>Next is the anchor element &lt;a> (which requires a closing tag &lt;/a>):</p>
+
+<p>&lt;a> ... &lt;/a></p>
+
+<p>target is an anchor tag attribute that specifies where to open the link. The value _blank specifies to open the link in a new tab. The href is an anchor tag attribute that contains the URL address of the link:</p>
+
+<p>&lt;a href="http://freecodecamp.org"> ... &lt;/a>
+The text, link to freecodecamp.org, within the a element is called anchor text, and will display the link to click:
+
+&lt;a href=" ... ">link to freecodecamp.org&lt;/a></p>
+
+<a href="http://freecodecamp.org">link to freecodecamp.org</a>
+
+<p>Another example: adding the _blank.</p>
+
+<p>&lt;a href="https://freecatphotoapp.com" target="_blank">cat photos&lt;/a></p>
+
+<a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+
+<p>The final output of the example will look like this:</p>
+
+<p> Here's a <a href="https://freecatphotoapp.com" target="_blank">link to cat photos</a> for you to follow. </p>
+
+<p>Make Dead Links Using the Hash Symbol
+Sometimes you want to add a elements to your website before you know where they will link.
+
+This is also handy when you're changing the behavior of a link using JavaScript, which we'll learn about later.</p>
+
+<p>The current value of the href attribute is a link that points to "https://freecatphotoapp.com". Replace the href attribute value with a #, also known as a hash symbol, to create a dead link.
+
+For example: href="#"</p>
+
+<p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+
+<p>Turn an Image into a Link</p>
+
+<p>You can make elements into links by nesting them within an a element.
+
+Nest your image within an a element. Here's an example:</p>
+
+<p>&lt;a href="#">&lt;img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera.">&lt;/a></p>
+
+<p>Remember to use # as your a element's href property in order to turn it into a dead link.</p>
+
+<a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>
+
+<a href="#"><img src="https://weneedfun.com/wp-content/uploads/2015/10/Cute-puppy-Pictures-29.jpg" alt="Puppy with flopped ear."></a> 
+
+<p>Things I've learned:</p>
+  <ul>
+    <li>unorganized list</li>
+    <li>will not be numbered</li>
+    <li>like this</li>
+  </ul>
+  <p>Other things I've learned:</p>
+  <ol>
+    <li>Organized listst</li>
+    <li>Are</li>
+    <li>numbered</li>
+  </ol>
+
+<h2 id="contacts-header">Contacts</h2>
+
+  <input type="text goes here" placeholder="this text appears inside text box prior to user input">
+
+  <p>Create a Form Element
+You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action attribute on your form element.
+
+For example:</p>
+
+<p>&lt;form action="/url-where-you-want-to-submit-form-data"></p>
+<p>  &lt;input></p>
+<p>&lt;/form></p>
+
+ <form action="https://freecatphotoapp.com/submit-cat-photo">
+  
+  <input type="text" placeholder="cat photo URL">
+  </form>
+	<script src="FILENAME.JS"></script> <!-- Check to see if file needs to be in same folder -->
+</head>
+<body>
+</body>
+
+</html>
